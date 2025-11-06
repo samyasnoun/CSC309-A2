@@ -3,10 +3,9 @@
  * Usage example: 
  *   node prisma/createsu.js clive123 clive.su@mail.utoronto.ca SuperUser123!
  */
-'use strict';
 
-const { PrismaClient } = require('@prisma/client');
-const bcrypt = require('bcrypt');
+import { PrismaClient } from '@prisma/client';
+import bcrypt from 'bcrypt';
 const prisma = new PrismaClient();
 
 async function main() {
